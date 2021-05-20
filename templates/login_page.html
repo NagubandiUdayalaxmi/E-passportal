@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<style>
+body{
+   background-color: rgb(190, 205, 230);
+}
+    div {
+  width: 100%;
+  border-radius: 5px;
+
+  padding: 50px;
+  max-width: 500px;
+  margin: auto;
+  }
+  input, select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 35%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+</style>
+
+<div >
+    <h1>E-PASS</h1>
+    <form method="post" action="/login_page">
+        <label> First Name </label><br><input type="text" name='fname' placeholder="First Name" required><br><br>
+        <label> Last Name </label><br><input type="text" name="name" placeholder="Last Name" required><br><br>
+        <label> Email Id :</label><br><input type="text" name="email" placeholder="Email" required><br><br>
+        <label> Source state :</label><br><input type="text" name="source_state" placeholder="source state" required><br><br>
+        <label> Source District :</label><br><input type="text" name="source" placeholder="traveling from" required><br><br>
+        <label>Destination State :</label><br><input type="text" name="dest_state" placeholder="destination state" required><br><br>
+        <label>Destination District :</label><br><input type="text" name="destination" placeholder="destination" required><br><br>
+        <label> Mobile Number :</label><br><input type="number" name="phoneNumber" placeholder="Phone number" required><br><br>
+        <label> Aadhaar Number :</label><br><input type="number" name="idcard" placeholder="Id proof" required><br><br>
+        <label> Travel Date :</label><br><input type="text" name="trip" placeholder="date" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</html>
